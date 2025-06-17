@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports, Art and Culture - Primary School</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, royalblue 25%, white 50%, royalblue 25%);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: royalblue;
+    }
+
+    .logo {
+      width: 60px;
+    }
+
+    nav {
+      background-color: royalblue;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul.nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 30px;
+    }
+
+    nav ul.nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav ul.nav-links li a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .search-bar {
+      margin: 20px 0;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 8px;
+      width: 60%;
+      max-width: 300px;
+    }
+
+    .search-bar button {
+      padding: 8px 12px;
+      background-color: royalblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .links {
+      margin: 20px 0;
+    }
+
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: royalblue;
+      font-weight: bold;
+    }
+
+    .images img {
+      width: 100%;
+      max-width: 200px;
+      margin: 10px;
+      border: 2px solid royalblue;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul.nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .search-bar input[type="text"] {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+ <!-- Anti-Download JavaScript -->
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable image drag
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts (Ctrl+S, Ctrl+U, Ctrl+P)
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && ['s', 'u', 'p'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    });
+  </script>
+<header>
+  <img src="logo.jpg" alt="School Logo" class="logo">
+</header>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="KAMHLUSHWAPRIMARYSCHOOL.html">Home</a></li>
+    <li><a href="about us.html">About Us</a></li>
+    <li><a href="management.html">Management</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Welcome to Sports, Art and Culture</h1>
+  <p>Explore the exciting activities in our primary school: Sports, Art, and Culture. Find information and pictures for each category below!</p>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search for Sports, Art or Culture...">
+    <button>Search</button>
+  </div>
+
+  <div class="links">
+    <a href="sport.html">Sports</a>
+    <a href="art.html">Art</a>
+    <a href="culture.html">Culture</a>
+  </div>
+
+  <div class="images">
+    <h2>Sports</h2>
+    <img src="52.jpg" alt="Sports">
+    <h2>Art</h2>
+    <img src="59.jpg" alt="Art">
+    <h2>Culture</h2>
+    <img src="63.jpg" alt="Culture">
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 KaMhlushwa Primary School - All rights reserved - Sports, Art and Culture Page
+</footer>
+
+</body>
+</html>

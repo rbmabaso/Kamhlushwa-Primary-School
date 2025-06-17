@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Primary School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Login to Kamhlushwa Primary</h1>
+    </header>
+    <main>
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            
+            <input type="submit" value="Login">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kamhlushwa Primary School</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Primary School</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateLoginForm(event) {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (username === '' || password === '') {
+                alert('Please enter both username and password.');
+                event.preventDefault(); // Prevent form from submitting
+                return false;
+            }
+
+            return true; // Allow submission
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Login to Kamhlushwa Primary</h1>
+    </header>
+    <main>
+        <form onsubmit="return validateLoginForm(event)">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            
+            <input type="submit" value="Login">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kamhlushwa Primary School</p>
+    </footer>
+</body>
+</html>

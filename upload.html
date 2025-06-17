@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Photo - KAMHLUSHWA PRIMARY SCHOOL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: royalblue;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: royalblue;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: royalblue;
+      padding: 10px 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li {
+      margin: 0 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .upload-wrapper {
+      background-color: white;
+      flex-grow: 1;
+      margin: 20px auto;
+      padding: 30px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .upload-title {
+      font-size: 2em;
+      color: royalblue;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="file"] {
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: royalblue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #003d99;
+    }
+
+    footer {
+      background-color: royalblue;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    footer li {
+      margin: 0 10px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links, footer ul {
+        flex-direction: column;
+      }
+
+      .nav-links li, footer li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="School Logo">
+</header>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about us.html">About Us</a></li>
+    <li><a href="management.html">Management</a></li>
+  </ul>
+</nav>
+
+<div class="upload-wrapper">
+  <div class="upload-title">Upload Photo</div>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <input type="file" name="photo" accept="image/*" required />
+    <input type="submit" value="Upload Image" />
+  </form>
+  <p style="margin-top: 20px;">Note: Only images are allowed. Max size 5MB.</p></div>
+
+</div>
+<footer>
+  <ul>
+    <li><a href="#">Support</a></li>
+    <li><a href="subjects.html">Subjects</a></li>
+    <li><a href="contactsdetails.html">Contacts</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="apply.html">Apply</a></li>
+  </ul>
+</footer>
+</body>
+</html>

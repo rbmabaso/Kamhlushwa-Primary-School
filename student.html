@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Guide | Kamhlushwa Primary School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: royalblue;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 50px; /* Adjust the logo size */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: royalblue;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #4b79a1;
+        }
+        .container {
+            margin: 20px;
+            text-align: center;
+            color: black;
+        }
+        .section-title {
+            background-color: royalblue;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .section-content {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Scroll Arrow Styling */
+        .scroll-arrow {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            cursor: pointer;
+            animation: bounce 1.5s infinite; /* Bounce animation */
+            color: royalblue;
+        }
+
+        /* Scroll Arrow Hover Effect */
+        .scroll-arrow:hover {
+            color: #4b79a1;
+        }
+
+        /* Bounce Animation */
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="logo.jpg" alt="Kamhlushwa Primary School Logo"> <!-- Replace with actual logo path -->
+        <h1>Kamhlushwa Primary School</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#schedule">Create a Schedule</a>
+        <a href="#goals">Set Specific Goals</a>
+        <a href="#notifications">Use Notifications</a>
+        <a href="#organization">Stay Organized</a>
+        <a href="#participation">Participate in Discussions</a>
+    </nav>
+
+    <!-- Scroll Arrow -->
+    <div class="scroll-arrow" onclick="scrollToContent()">&#8595;</div>
+
+    <!-- Main Content Section -->
+    <div class="container" id="content-section">
+        <h2 class="section-title">Tips for Managing Your Time in Online Learning</h2>
+        <div class="section-content">
+            <h3 id="schedule">1. Create a Schedule</h3>
+            <p>Develop a weekly schedule that includes dedicated time for online classes, study sessions, and assignments. Stick to this schedule as closely as possible.</p>
+
+            <h3 id="goals">2. Set Specific Goals</h3>
+            <p>Define clear and specific learning goals for each study session. This will help you stay focused and on track.</p>
+
+            <h3 id="notifications">3. Use Notifications</h3>
+            <p>Configure Moodle to send you notifications for important events like assignment due dates, upcoming quizzes, or forum posts. This will help you stay informed.</p>
+
+            <h3 id="organization">4. Stay Organized</h3>
+            <p>Keep your course materials, notes, and important links well-organized. Moodle often provides a course dashboard; make use of it to access your courses easily.</p>
+
+            <h3 id="participation">5. Participate in Discussions</h3>
+            <p>Engage actively in online discussions and forums. Participation not only enhances your learning but also helps you feel more connected to your peers and instructors.</p>
+
+            <h3>6. Avoid Multitasking</h3>
+            <p>Focus on one task at a time. Multitasking can reduce your productivity and hinder your ability to absorb information effectively.</p>
+
+            <h3>7. Take Breaks</h3>
+            <p>Schedule short breaks during study sessions to recharge and avoid burnout. A common technique is the Pomodoro technique, where you work for 25 minutes and then take a 5-minute break.</p>
+
+            <h3>8. Use Time Management Tools</h3>
+            <p>Utilize time management apps, calendars, or to-do lists to keep track of your assignments and deadlines.</p>
+
+            <h3>9. Limit Distractions</h3>
+            <p>Create a distraction-free study environment. Turn off unnecessary notifications on your devices, and let those around you know when you need focused study time.</p>
+
+            <h3>10. Seek Help When Needed</h3>
+            <p>Don’t hesitate to ask your instructors or classmates for help when you’re stuck. Moodle often includes discussion forums or messaging features for communication.</p>
+
+            <h3>11. Review and Reflect</h3>
+            <p>Periodically review your progress and reflect on what’s working and what needs improvement in your time management strategy.</p>
+
+            <h3>12. Adapt to Your Learning Style</h3>
+            <p>Tailor your time management approach to your own learning style. Some students are more productive in the morning, while others work better at night.</p>
+
+            <h3>13. Prioritize Tasks</h3>
+            <p>Identify the most critical and time-sensitive tasks and tackle them first. This can prevent last-minute rushes and reduce stress.</p>
+
+            <h3>14. Back Up Your Work</h3>
+            <p>Regularly back up your assignments and coursework in case of technical issues. Moodle allows you to download course materials, so take advantage of this feature.</p>
+
+            <h3>15. Stay Consistent</h3>
+            <p>Consistency is key. Stick to your schedule, even on days when you don’t feel like studying.</p>
+
+            <h3>16. Time Management Workshops</h3>
+            <p>If your institution offers time management workshops or resources, consider attending them to refine your skills.</p>
+
+            <h3>17. Balance Work and Life</h3>
+            <p>Don’t forget to allocate time for relaxation, exercise, and social interaction. A balanced life leads to better productivity.</p>
+
+            <h3>18. Seek Feedback</h3>
+            <p>Request feedback from your instructors on your time management and study habits. They can offer valuable insights and suggestions.</p>
+
+            <p>Remember that effective time management in an online learning environment can be a learning process in itself. It may take some time to find the strategies that work best for you, so be patient and adaptable as you fine-tune your approach.</p>
+
+        </div>
+    </div>
+
+    <script>
+        // Function to scroll smoothly to the main content section
+        function scrollToContent() {
+            const contentSection = document.getElementById("content-section");
+            contentSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+<footer>
+&copy; 2025 KaMhlushwa Primary School - All rights reserved | Contact Us: kamhlushwaprimaryschool@gmail.com
+</footer>
+</body>
+</html>

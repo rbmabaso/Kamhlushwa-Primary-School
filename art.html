@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .topbar {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  .container {
+    display: flex;
+    margin-top: 50px; /* to avoid overlap with topbar */
+  }
+  .side {
+    width: 20%;
+    background-color: royalblue;
+    height: calc(100vh - 50px);
+  }
+  .middle {
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .middle h1, .middle h2 {
+    color: royalblue;
+  }
+  .middle p {
+    color: black;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+</style>
+</head>
+<body>
+ <!-- Anti-Download JavaScript -->
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable image drag
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts (Ctrl+S, Ctrl+U, Ctrl+P)
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && ['s', 'u', 'p'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    });
+  </script>
+<div class="topbar">
+  <a href="KAMHLUSHWAPRIMARYSCHOOL.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a>
+  <div><a href="sports,art&culture.html" style="color: white; text-decoration: none; font-weight: bold;">Sport-Art</a></div>
+</div>
+
+<div class="container">
+  <div class="side"></div>
+  
+  <div class="middle">
+    <h1>Art</h1>
+    <p style="font-size: 1.2em; margin-bottom: 20px;">
+      At KaMhlushwa Primary School, art and culture are a vibrant part of our school life.
+      We encourage every child to explore their creativity, express themselves with pride,
+      and connect with the beauty of their heritage.
+    </p>
+    <p style="font-size: 1.1em;">
+      <em>"Every child is an artist and a storyteller. Let your colors shine and your dances tell our tales!"</em>
+    </p>
+    
+    <h2>Creativity</h2>
+    <img src="7.jpg" alt=>
+    <img src="IMG_0118.jpg" alt="Traditional Dance 2">
+    <img src="59.jpg" alt="Traditional Dance 3">
+  </div>
+  
+  <div class="side"></div>
+</div>
+</body>
+</html>

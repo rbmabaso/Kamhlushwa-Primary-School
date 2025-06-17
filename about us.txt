@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <style>
+        .section-title {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .section-content {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="section-title">HISTORY</h1>
+<p class="section-content">
+    Our school was established with the vision of providing quality education to learners in our community. 
+    Since its founding, the school has grown both in size and achievements, with a strong focus on academic excellence, 
+    discipline, and holistic development.
+</p>
+
+<h1 class="section-title">OBJECTIVES</h1>
+<p class="section-content">
+    - To provide a safe, inclusive, and nurturing learning environment.<br>
+    - To equip learners with academic knowledge and life skills.<br>
+    - To promote cultural awareness, discipline, and respect.<br>
+    - To encourage critical thinking, creativity, and innovation.<br>
+    - To engage with parents and the community for educational development.
+</p>
+
+<!-- SUGGESTED ADDITIONS -->
+<h1 class="section-title">MORE ABOUT US</h1>
+<p class="section-content">
+    We are committed to creating future leaders through integrity, hard work, and community involvement. 
+    Our school offers extracurricular activities, sports, and technology-based learning to cater to the needs of both mobile and PC users.
+</p>
+
+<!-- Optional sections -->
+<ul class="section-content">
+    <li><strong>Mission & Vision</strong></li>
+    <li><strong>School Values</strong></li>
+    <li><strong>Principal’s Welcome Message</strong></li>
+    <li><strong>Achievements & Awards</strong></li>
+    <li><strong>School Motto & Emblem</strong></li>
+</ul>
+
+</body>
+</html>

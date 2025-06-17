@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - KAMHLUSHWA PRIMARY SCHOOL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: royalblue;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: royalblue;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      width: 100%;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    .nav-links li {
+      margin: 10px 15px;
+      text-align: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      height: 3px;
+      background: white;
+      margin: 5px 0;
+      width: 25px;
+    }
+
+    .top-header {
+      width: 100%;
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .content-wrapper {
+      background-color: white;
+      max-width: 900px;
+      width: 90%;
+      margin-top: 30px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .section-title {
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-size: 1.5em;
+      margin-top: 30px;
+      color: royalblue;
+      cursor: pointer;
+    }
+
+    .section-content {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    ul.section-content {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul.section-content li {
+      margin-bottom: 10px;
+    }
+
+    .history-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .history-images img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+      }
+
+      .nav-toggle {
+        display: flex;
+        margin-top: 10px;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: royalblue;
+        text-align: center;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="School Logo" />
+  <div class="nav-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="KAMHLUSHWAPRIMARYSCHOOL.html">Home</a></li>
+      <li><a href="management.html">Management</a></li>
+      <li><a href="subjects.html">Subjects</a></li>
+      <li><a href="contactsdetails.html">Contacts</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="top-header">About Us</div>
+
+<div class="content-wrapper">
+  <h1 class="section-title" onclick="toggleHistory()">HISTORY</h1>
+  <div id="history-section" style="display:none;">
+    <p class="section-content">
+      Our school was established with the vision of providing quality education to learners in our community.
+      Since its founding, the school has grown both in size and achievements, with a strong focus on academic excellence,
+      discipline, and holistic development.
+    </p>
+	<!-- Anti-Download JavaScript -->
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable image drag
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts (Ctrl+S, Ctrl+U, Ctrl+P)
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && ['s', 'u', 'p'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    });
+  </script>
+    <div class="history-images">
+      <img src="ezgif.com-animated-gif-maker.gif" alt="Historic Image 1">
+      <img src="IMG_2403.jpg" alt="Historic Image 2">
+      <img src="kamhlushwa_school.gif" alt="Historic Image 3">
+    </div>
+  </div>
+
+  <h1 class="section-title">OBJECTIVES</h1>
+  <p class="section-content">
+    - To provide a safe, inclusive, and nurturing learning environment.<br>
+    - To equip learners with academic knowledge and life skills.<br>
+    - To promote cultural awareness, discipline, and respect.<br>
+    - To encourage critical thinking, creativity, and innovation.<br>
+    - To engage with parents and the community for educational development.
+  </p>
+
+  <h1 class="section-title">MORE ABOUT US</h1>
+  <p class="section-content">
+    We are committed to creating future leaders through integrity, hard work, and community involvement.
+    Our school offers extracurricular activities, sports, and technology-based learning to cater to the needs of both mobile and PC users.
+  </p>
+
+  <nav>
+    <ul class="section-content">
+      <li><a href="mission-vision.html">Mission & Vision</a></li>
+      <li><a href="index.html">School Values</a></li>
+      <li><a href="PrincipalWelcomeMessage.html">Principal Welcome Message</a></li>
+      <li><a href="index.html">Achievements & Awards</a></li>
+      <li><a href="index.html">School Motto & Emblem</a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  function toggleHistory() {
+    const history = document.getElementById("history-section");
+    history.style.display = history.style.display === "none" ? "block" : "none";
+  }
+
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kamhlushwa Primary School</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: royalblue;
+      text-align: center;
+    }
+
+    header {
+      background-color: royalblue;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: auto;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    header h1 {
+      flex: 1;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    nav {
+      background-color: royalblue;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
+    nav > ul > li {
+      position: relative;
+    }
+
+    nav li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      font-weight: bold;
+    }
+
+    nav li:hover > a {
+      background-color: #003d99;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: left;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul li a {
+      color: royalblue;
+    }
+
+    nav li ul li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    nav li ul li ul {
+      left: 100%;
+      top: 0;
+      display: none;
+      position: absolute;
+    }
+
+    nav li ul li:hover ul {
+      display: block;
+    }
+
+    .container {
+      background-color: white;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 5px solid royalblue;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .slideshow-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .home-slideshow,
+    .news-slideshow {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .home-slideshow {
+      width: 100%;
+      max-width: 900px;
+      height: 400px;
+    }
+
+    .news-slideshow {
+      width: 100%;
+      max-width: 600px;
+      height: 850px;
+    }
+
+    .home-slideshow img,
+    .news-slideshow img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .home-slideshow img.active,
+    .news-slideshow img.active {
+      display: block;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255,255,255,0.7);
+      border: none;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .nav-btn.left {
+      left: 10px;
+    }
+
+    .nav-btn.right {
+      right: 10px;
+    }
+
+    .nav-btn:hover {
+      background-color: rgba(255,255,255,0.9);
+    }
+
+    footer {
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Anti-Download JavaScript -->
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable image drag
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts (Ctrl+S, Ctrl+U, Ctrl+P)
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && ['s', 'u', 'p'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <header>
+    <img src="logo.jpg" alt="School Logo" />
+    <h1>Welcome to Kamhlushwa Primary School</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="KAMHLUSHWAPRIMARYSCHOOL.html">Home</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a href="management.html">Management</a></li>
+      <li><a href="support.html">Support</a>
+        <ul>
+          <li><a href="onlineapplication.html">Online Application</a></li>
+          <li><a href="Student Guidance.html">Student Guidance</a></li>
+          <li><a href="Admission Requirements.html">Admission Requirements</a></li>
+          <li><a href="sports,art&culture.html">Sport & Art and Culture</a></li>
+          <li><a href="Teachersguide.html">Teachers Guide</a></li>
+          <li><a href="student.html">Student Guide</a></li>
+          <li><a href="Wellness and Health.html">Wellness & Health</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="subjects.html">Subjects</a></li>
+      <li><a href="contactsdetails.html">Contacts</a></li>
+      <li><a href="OnlineLearning.html">OnlineLearning</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="slideshow-wrapper">
+      <div class="home-slideshow" id="main-slideshow">
+        <img src="oldprimary.jpg" class="active" alt="Where it all started"/>
+        <img src="banner4.jpg" alt="Kamhlushwa Primary School"/>
+        <img src="04102012(030).jpg" alt="Adm First view" />
+        <img src="04102012(003).png" alt="Admin" />
+		<img src="fccc9678-32cd-46af-b36c-9763ab3cdb52.jpg" alt="view"/>
+        <img src="eedf9446-2b89-4d8f-8b36-6c81fc880452.jpg" alt="Certificated" />
+        <img src="20150216_074122.jpg" alt="Formal"/>
+        <img src="8a6195c8-3ab5-475e-821a-96bb316ad60a.jpg" alt="Events" />
+        <img src="IMG_2403.jpg" alt="The Principal"/>
+        <img src="20141003_090922.jpg" alt="Culture"/>
+        <img src="64.jpg" alt="Computer lab"/>
+        <img src="bd678623-d05f-4086-9e8f-bceee8f54386.jpg" alt="Achievement" />
+        <img src="7d4537fc-7e85-4e60-96ee-d256600bda7f.jpg" alt="Events" />
+        <img src="62.jpg" alt="Soccer Team"/>
+        <img src="3.jpg" alt="Soccer Team"/>
+      </div>
+    </div>
+  </div>
+
+  <h1 style="color: white;">KPS NEWS</h1>
+
+  <div class="container">
+    <div class="slideshow-wrapper">
+      <div class="news-slideshow" id="news-slideshow">
+        <button class="nav-btn left" onclick="prevNewsSlide()">&#10094;</button>
+        <img src="44.jpg" class="active" alt="news"/>
+        <img src="d0caade6-9cb1-4ba2-bad8-e43d9baaccef.jpg" alt="news"/>
+        <img src="30464f7e-0336-4cb2-96fa-7149ff3180d4.jpg" alt="news"/>
+		<img src="5fe8dc2c-1bd5-4f01-991e-4189c267ca42.jpg" alt="news"/>
+        <img src="15b19508-0f0f-4043-920d-946814fd4478.jpg" alt="news"/>
+        <img src="57.jpg" alt="news"/>
+        <img src="30.jpg" alt="news"/>
+		<img src="1.13.jpg" alt="Girls"/>
+        <img src="25.jpg" alt="news"/>
+		<img src="2e0bb280-0485-4216-8926-758f3ab7e7f1.jpg" alt="news"/>
+		<img src="5.jpg" alt="news"/>
+		<img src="9a8f746a-8534-429b-8cc5-6ed21367b922.jpg" alt="news"/>
+        <button class="nav-btn right" onclick="nextNewsSlide()">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 KaMhlushwa Primary School. All rights reserved.
+  </footer>
+
+  <script>
+    // Home slideshow auto scroll
+    function setupSlideshow(containerId) {
+      const container = document.getElementById(containerId);
+      const slides = container.querySelectorAll('img');
+      let index = 0;
+
+      function cycle() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+      }
+
+      setInterval(cycle, 3000);
+    }
+
+    setupSlideshow('main-slideshow');
+
+    // News slideshow with buttons and auto scroll
+    let newsIndex = 0;
+    const newsSlides = document.querySelectorAll('#news-slideshow img');
+
+    function showNewsSlide(i) {
+      newsSlides.forEach(slide => slide.classList.remove('active'));
+      newsSlides[i].classList.add('active');
+    }
+
+    function nextNewsSlide() {
+      newsIndex = (newsIndex + 1) % newsSlides.length;
+      showNewsSlide(newsIndex);
+    }
+
+    function prevNewsSlide() {
+      newsIndex = (newsIndex - 1 + newsSlides.length) % newsSlides.length;
+      showNewsSlide(newsIndex);
+    }
+
+    showNewsSlide(newsIndex);
+    setInterval(nextNewsSlide, 4000);
+  </script>
+</body>
+</html>

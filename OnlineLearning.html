@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamhlushwa Primary School - Online Learning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, royalblue 0%, royalblue 20%, white 20%, white 80%, royalblue 80%, royalblue 100%);
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+      top: 20px;
+    }
+    header {
+      background-color: royalblue;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+      margin-right: 20px;
+    }
+    h1, h2 { text-align: center; }
+    .login-form input, #registration input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    .course { margin-bottom: 20px; }
+    .video { margin-top: 10px; }
+    label { font-weight: bold; }
+    .form-links {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+    }
+    .form-links a { text-decoration: none; color: blue; }
+    footer {
+      text-align: center;
+      background-color: royalblue;
+      color: white;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="School Logo">
+    <h1>Kamhlushwa Primary School</h1>
+  </header>
+  <div class="container">
+    <h2>Online Course Login</h2>
+
+    <div class="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button onclick="login()">Login</button>
+
+      <div class="form-links">
+        <a href="password">Forgot Password?</a>
+        <a href="#" onclick="showRegistration()">Create New Account</a>
+      </div>
+    </div>
+
+    <div id="registration" style="display:none;">
+      <h2>Create New Account</h2>
+      <label for="newUsername">New Username:</label>
+      <input type="text" id="newUsername" name="newUsername">
+
+      <label for="newPassword">New Password:</label>
+      <input type="password" id="newPassword" name="newPassword">
+
+      <button onclick="register()">Register</button>
+    </div>
+
+	<!--
+    <div id="courses" style="display:none;">
+      <h2>Available Online Courses</h2>
+
+      <div class="course">
+        <h3>English - Teacher: Shongwe M.B</h3>
+        <video class="video" controls width="100%">
+          <source src="english_course.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="course">
+        <h3>Mathematics - Teacher: Sithole N.D</h3>
+        <video class="video" controls width="100%">
+          <source src="mathematics_course.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="course">
+        <h3>Social Science - Teacher: Ndhlovu L</h3>
+        <video class="video" controls width="100%">
+          <source src="social_science_course.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="course">
+        <h3>Natural Science - Teacher: Thabethe P</h3>
+        <video class="video" controls width="100%">
+          <source src="natural_science_course.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="course">
+        <h3>Life Orientation - Teacher: Ndhlovu L</h3>
+        <video class="video" controls width="100%">
+          <source src="life_orientation_course.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="course">
+        <h3>Creative Art - Teacher: Shongwe L.L</h3>
+        <video class="video" controls width="100%">
+          <source src="creative_art_course.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="course">
+        <h3>Entrepreneurship - Teacher: Mrs. Lindiwe Shongwe</h3>
+        <video class="video" controls width="100%">
+          <source src="entrepreneur_course.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+	
+	-->
+  </div>
+  <footer>
+    &copy; 2025 Kamhlushwa Primary School. All rights reserved.
+  </footer>
+
+  <script>
+    function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (!username || !password) {
+        alert("Enter both username and password.");
+        return;
+      }
+
+      if (!validatePassword(password)) {
+        alert("Password must contain letters and numbers and be at least 6 characters long.");
+        return;
+      }
+
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+
+      document.querySelector('.login-form').style.display = 'none';
+      document.getElementById('courses').style.display = 'block';
+    }
+
+    function showRegistration() {
+      document.querySelector('.login-form').style.display = 'none';
+      document.getElementById('registration').style.display = 'block';
+    }
+
+    function register() {
+      const newUsername = document.getElementById('newUsername').value;
+      const newPassword = document.getElementById('newPassword').value;
+
+      if (!newUsername || !newPassword) {
+        alert("Enter both username and password.");
+        return;
+      }
+
+      if (!validatePassword(newPassword)) {
+        alert("Password must contain letters and numbers and be at least 6 characters long.");
+        return;
+      }
+
+      localStorage.setItem('username', newUsername);
+      localStorage.setItem('password', newPassword);
+
+      document.getElementById('registration').style.display = 'none';
+      document.getElementById('courses').style.display = 'block';
+    }
+
+    function validatePassword(password) {
+      const hasLetter = /[a-zA-Z]/.test(password);
+      const hasNumber = /[0-9]/.test(password);
+      return hasLetter && hasNumber && password.length >= 6  //false
+    }
+  </script>
+</body>
+</html>

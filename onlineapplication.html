@@ -1,0 +1,295 @@
+<!Doctype>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Apply - Primary School</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: royalblue;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: royalblue;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      background-color: royalblue;
+    }
+
+    .slideshow {
+      width: 200px;
+      background-color: royalblue;
+      color: white;
+      font-weight: bold;
+      padding: 15px;
+      overflow: hidden;
+      height: 400px;
+    }
+
+    .slide-text {
+      display: flex;
+      flex-direction: column;
+      animation: scrollSubjects 15s linear infinite;
+    }
+
+    .slide-text div {
+      padding: 10px 0;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    @keyframes scrollSubjects {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100%); }
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 600px;
+      margin-left: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: royalblue;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input,
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form input[type="submit"] {
+      background-color: royalblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #003d99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: royalblue;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .slideshow {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .container {
+        margin-left: 0;
+      }
+
+      .slide-text {
+        animation: scrollSubjectsMobile 15s linear infinite;
+      }
+
+      @keyframes scrollSubjectsMobile {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50%); }
+      }
+    }
+  </style>
+
+  <script>
+    function validateApplicationForm(event) {
+      const name = document.getElementById('fullname').value.trim();
+      const grade = document.getElementById('grade').value;
+      const email = document.getElementById('email').value.trim();
+      const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+
+      if (name === '') {
+        alert('Please enter your full name.');
+        event.preventDefault();
+        return false;
+      }
+
+      if (grade === '') {
+        alert('Please select a grade.');
+        event.preventDefault();
+        return false;
+      }
+
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        event.preventDefault();
+        return false;
+      }
+
+      return true;
+    }
+
+    function toggleCitizenFields() {
+      const citizenValue = document.getElementById("citizen").value;
+      document.getElementById("nonCitizenFields").style.display = citizenValue === "no" ? "block" : "none";
+      document.getElementById("idNumberField").style.display = citizenValue === "yes" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="School Logo">
+    <h1>Kamhlushwa Primary School</h1>
+  </header>
+
+  <main>
+    <!-- Subject Slideshow -->
+    <div class="slideshow">
+      <div class="slide-text">
+        <div>MATHEMATICS</div>
+        <div>TECHNOLOGY</div>
+        <div>NATURAL SCIENCE</div>
+        <div>SOCIAL SCIENCES</div>
+        <div>CREATIVE ART</div>
+        <div>ENGLISH</div>
+        <div>SISWATI</div>
+        <div>EMS</div>
+        <div>LIFE SKILLS</div>
+        <div>MATHEMATICS</div> <!-- repeated to loop -->
+        <div>TECHNOLOGY</div>
+      </div>
+    </div>
+
+    <!-- Application Form -->
+    <div class="container">
+      <h2>Online Application Form</h2>
+      <form id="applicationForm" action="submit_application.php" method="POST" onsubmit="return validateApplicationForm(event)">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="grade">Grade Applying For:</label>
+        <select id="grade" name="grade" required>
+          <option value="">--Select Grade--</option>
+          <option value="R">Grade R</option>
+          <option value="1">Grade 1</option>
+          <option value="2">Grade 2</option>
+          <option value="3">Grade 3</option>
+          <option value="4">Grade 4</option>
+          <option value="5">Grade 5</option>
+          <option value="6">Grade 6</option>
+          <option value="7">Grade 7</option>
+        </select>
+
+        <label for="email">Parent/Guardian Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="studentType">Registration:</label>
+        <select id="studentType" name="studentType">
+          <option value="new">New Student</option>
+          <option value="senior">Senior Student</option>
+        </select>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <label for="initials">Initials:</label>
+        <input type="text" id="initials" name="initials" required>
+
+        <label for="firstName">First Names:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="citizen">South African Citizen:</label>
+        <select id="citizen" name="citizen" onchange="toggleCitizenFields()" required>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <div id="nonCitizenFields" style="display: none;">
+          <label for="passport">Passport:</label>
+          <input type="text" id="passport" name="passport">
+
+          <label for="origin">Country of Origin:</label>
+          <input type="text" id="origin" name="origin">
+
+          <label for="permit">Permit:</label>
+          <input type="text" id="permit" name="permit">
+
+          <label for="expiry">Permit Expiry Date:</label>
+          <input type="date" id="expiry" name="expiry">
+        </div>
+
+        <div id="idNumberField" style="display: none;">
+          <label for="idNumber">ID Number:</label>
+          <input type="text" id="idNumber" name="idNumber">
+        </div>
+
+        <input type="submit" value="Apply">
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kamhlushwa Primary School - All rights reserved.</p>
+  </footer>
+</body>
+</html>
+

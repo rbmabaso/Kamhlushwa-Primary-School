@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admission Requirements - KaMhlushwa Primary School</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+      background-color: royalblue;
+    }
+
+    .outer-wrapper {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .side-column {
+      flex: 1;
+      background-color: royalblue;
+    }
+
+    .content-wrapper {
+      flex: 3;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .top-header {
+      background-color: royalblue;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .top-header .logo {
+      height: 80px;
+    }
+
+    .top-header .title {
+      text-align: center;
+      flex: 1;
+    }
+
+    .top-header .title h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .top-header .title p {
+      margin: 5px 0 0 0;
+      font-size: 18px;
+    }
+
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #e6f0ff;
+    }
+
+    .image-section {
+      text-align: center;
+      margin: 30px 0;
+      position: relative;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .footer {
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .top-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .top-header .title {
+        order: 2;
+      }
+
+      .top-header img.logo {
+        order: 1;
+        margin-bottom: 10px;
+      }
+
+      .outer-wrapper {
+        flex-direction: column;
+      }
+
+      .side-column {
+        display: none;
+      }
+    }
+  </style>
+ <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable drag and drop
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts for save
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'p')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</head>
+<body>
+
+  <div class="top-header">
+    <img src="logo.jpg" alt="School Logo" class="logo" />
+    <div class="title">
+      <h1>Admission Requirements</h1>
+      <p>KaMhlushwa Primary School</p>
+    </div>
+  </div>
+
+  <div class="outer-wrapper">
+    <div class="side-column"></div>
+
+    <div class="content-wrapper">
+
+      <div class="image-section">
+        <img src="kamhlushwa_school.gif" alt="school uniform">
+        <img src="icegif-502.gif" alt="Mpumalanga">
+      </div>
+
+      <h2>School Information</h2>
+      <ul>
+        <li>School Hours</li>
+        <li>School Uniform</li>
+        <li>School Fees</li>
+        <li>Important Dates</li>
+        <li>Extra-Mural Timetable</li>
+      </ul>
+
+      <h2>School Uniform</h2>
+      <p>Learners must wear the official school uniform, to and from school, according to the season...</p>
+
+      <h3>Uniform Guidelines</h3>
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Girls</th><th>Boys</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tunic / Trouser</td><td>Scotch with Royal blue collar</td><td>Grey</td></tr>
+          <tr><td>Skirt / Dry Mak</td><td>Scotch</td><td>Navy blue with KPS emblem</td></tr>
+          <tr><td>Shirt</td><td>White shirt with KPS emblem</td><td>White shirt with KPS emblem</td></tr>
+          <tr><td>Jersey</td><td>Royal blue V-neck with gold and light blue stripe</td><td>Royal blue V-neck with gold and light blue stripe</td></tr>
+          <tr><td>Socks</td><td>Royal blue with gold and light stripe</td><td>Royal blue with gold and light stripe</td></tr>
+        </tbody>
+      </table>
+
+      <h3><u>School Hours</u></h3>
+      <p><strong>Mondays, Tuesday, and Friday</strong></p>
+      <ul>
+        <li>Warning bell: 07:00</li>
+        <li>School starts: 07:45</li>
+        <li>Break: 9:50-10:20</li>
+        <li>End of school for Grades R: 12:45</li>
+        <li>End of school for Grades 1 - 7: 14:00</li>
+      </ul>
+
+      <p><strong>Wednesday and Friday</strong></p>
+      <ul>
+        <li>Warning bell: 07:00</li>
+        <li>School starts: 07:45</li>
+        <li>Break: 9:50-10:20</li>
+        <li>End of school for Grades R: 12:45</li>
+        <li>End of school for Grades 1 - 7: 14:00</li>
+      </ul>
+
+      <h3>School Admission for 2025</h3>
+      <p><strong>GRADE R REQUIREMENTS</strong></p>
+      <p>Be within allowed age group (From July to December 2024 to – January to June 2025)</p>
+      <p><strong>DOCUMENTS REQUIRED (Original & Certified)</strong></p>
+      <ul>
+        <li>Copy of birth certificate</li>
+        <li>Copy of immunisation record card</li>
+        <li>Copy of parent ID</li>
+        <li>Two passport photos</li>
+      </ul>
+
+      <p><strong>Other Grades (1-6)</strong></p>
+      <ul>
+        <li>Transfer letter from another school</li>
+        <li>If a student is from outside the country, a foreigner permit letter is required</li>
+      </ul>
+
+      <h3>Dates of Admission</h3>
+      <ul>
+        <li>1st week (21.07.25): Grade R - 1</li>
+        <li>2nd week (28.07.25): Grade 2 - 3</li>
+        <li>3rd week (04.07.25): Grade 4 - 6</li>
+      </ul>
+
+      <div class="image-section">
+        <img src="outreach.jpg" alt="Tree Image Placeholder">
+        <h3>Extra-Mural Timetable</h3>
+        <p><strong>Downloads:</strong></p>
+        <ul>
+          <li><a href="#">Extra Mural Timetable Term 1 - 2025</a></li>
+          <li><a href="#">Extra Mural Timetable Term 2 and 3 - 2025</a></li>
+        </ul>
+      </div>
+
+      <p>Please see the <strong>Information Brochure</strong> for detailed guidelines on school and sports uniforms.</p>
+
+    </div>
+
+    <div class="side-column"></div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 KaMhlushwa Primary School. All rights reserved.
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal Welcome Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Header with logo on the left and title centered */
+        header {
+            background-color: royalblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .logo-container {
+            flex: 1;
+        }
+
+        .logo-container img {
+            height: 60px;
+        }
+
+        .header-title {
+            flex: 3;
+            text-align: center;
+        }
+
+        .header-title h1 {
+            color: white;
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .principal-photo {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .message-title {
+            color: royalblue;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .message-content {
+            font-size: 1em;
+            margin-top: 15px;
+            text-align: justify;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 600px) {
+            .header-title h1 {
+                font-size: 1.2em;
+            }
+
+            .message-title {
+                font-size: 1.2em;
+            }
+
+            .message-content {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <!-- Anti-Download JavaScript -->
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable image drag
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts (Ctrl+S, Ctrl+U, Ctrl+P)
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && ['s', 'u', 'p'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    });
+  </script>
+  <header>
+     <img src="logo.jpg" alt="School Logo"> 	  
+  </header>
+<main>
+  <div class="container">
+      <h1>Principal’s  Welcoming Message</h1>
+  </div>
+</main>
+<main>
+    <img src="ezgif.com-animated-gif-maker (4).gif" alt="Principal Photo" class="principal-photo">
+
+    <div class="message-title">Principal Welcome Message</div>
+
+    <p class="message-content">
+        Welcome to our school community. At our institution, we are committed to creating an environment that nurtures academic excellence, personal growth, and community responsibility. We believe in empowering our learners to become critical thinkers and compassionate leaders. Thank you for being part of our journey toward excellence in education.
+    </p>
+</main>
+		<li><a href="KAMHLUSHWAPRIMARYSCHOOL.html">Home</a></li>
+<footer>
+&copy; 2025 KaMhlushwa Primary School - All rights reserved.
+</footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply - Primary School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Application Form</h1>
+    </header>
+    <main>
+        <form>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="grade">Grade Applying For:</label><br>
+            <select id="grade" name="grade">
+                <option value="R">Grade R</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+            </select><br><br>
+
+            <label for="email">Parent/Guardian Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <input type="submit" value="Apply">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kamhlushwa Primary School</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply - Primary School</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateApplicationForm(event) {
+            const name = document.getElementById('fullname').value.trim();
+            const grade = document.getElementById('grade').value;
+            const email = document.getElementById('email').value.trim();
+            const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+
+            if (name === '') {
+                alert('Please enter your full name.');
+                event.preventDefault();
+                return false;
+            }
+
+            if (grade === '') {
+                alert('Please select a grade.');
+                event.preventDefault();
+                return false;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                event.preventDefault();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Application Form</h1>
+    </header>
+    <main>
+        <form onsubmit="return validateApplicationForm(event)">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="grade">Grade Applying For:</label><br>
+            <select id="grade" name="grade" required>
+                <option value="">--Select Grade--</option>
+                <option value="R">Grade R</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+            </select><br><br>
+
+            <label for="email">Parent/Guardian Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <input type="submit" value="Apply">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kamhlushwa Primary School</p>
+    </footer>
+</body>
+</html>

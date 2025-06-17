@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Achievements & Awards | Kamhlushwa Primary School</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: royalblue;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: royalblue;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .logo {
+      height: 60px;
+      margin-right: 20px;
+    }
+    .title {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .content-wrapper {
+      display: flex;
+      flex: 1;
+    }
+    .side {
+      width: 15%;
+      background-color: royalblue;
+    }
+    .content {
+      background-color: white;
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    .message {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    td {
+      padding: 10px;
+    }
+    img.achievement {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border: 2px solid #ccc;
+    }
+    footer {
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+   <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable drag and drop
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts for save
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'p')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logo.jpg" alt="School Logo" class="logo">
+      <div class="title">Achievements & Awards</div>
+    </header>
+    <div class="content-wrapper">
+      <div class="side"></div>
+      <div class="content">
+        <p class="message">
+          At Kamhlushwa Primary School, we believe that every achievement is a step toward greatness. Our awards reflect the hard work, talent, and dedication of our learners and staff. Celebrate our journey of excellence!
+        </p>
+        <table>
+          <tr>
+            <td><img src="IVPM6317.jpg" alt="Achievement 1" class="achievement"></td>
+            <td><img src="54.jpg" alt="Achievement 2" class="achievement"></td>
+            <td><img src="6b3c059a-6248-4480-949f-8aa48793c8d6.jpg" alt="Achievement 3" class="achievement"></td>
+          </tr>
+          <tr>
+            <td><img src="19.jpg" alt="Award 1" class="achievement"></td>
+            <td><img src="9c36b01b-706f-4788-92a5-190fabd1084b.jpg" alt="Award 2" class="achievement"></td>
+            <td><img src="41.jpg" alt="Award 3" class="achievement"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="side"></div>
+    </div>
+    <footer>
+      &copy; 2025 Kamhlushwa Primary School. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

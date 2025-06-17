@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>More Gallery - KAMHLUSHWA PRIMARY SCHOOL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: royalblue;
+    }
+
+    header {
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav {
+      text-align: center;
+      background-color: royalblue;
+      padding: 10px 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li {
+      margin: 0 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .gallery-title {
+      text-align: center;
+      color: royalblue;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 15px;
+    }
+
+    td {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: top;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    td img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-bottom: 2px solid royalblue;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .caption {
+      background-color: royalblue;
+      color: white;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    footer {
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    footer li {
+      margin: 0 10px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 868px) {
+      table, tr, td {
+        display: block;
+        width: 100%;
+      }
+      td {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable drag and drop
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts for save
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'p')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>KAMHLUSHWA PRIMARY SCHOOL</h1>
+</header>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="KAMHLUSHWAPRIMARYSCHOOL.html">Home</a></li>
+    <li><a href="about us.html">About Us</a></li>
+    <li><a href="management.html">Management</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="gallery-title">More School Gallery</div>
+
+  <table>
+    <tr>
+      <td><img src="10.jpg" alt="Sports Day"><div class="caption">Sports Day Fun - Students participating in track events.</div></td>
+      <td><img src="12.1.jpg" alt="Science Fair"><div class="caption">Science Fair - Students sharing their inventions.</div></td>
+      <td><img src="63.jpg" alt="Cultural Day"><div class="caption">Cultural Day - Celebrating diversity and heritage.</div></td>
+      <td><img src="27.jpg" alt="Classroom Learning"><div class="caption">Classroom Learning - Engaging lessons in action.</div></td>
+    </tr>
+    <tr>
+      <td><img src="25.jpg" alt="Art Exhibition"><div class="caption">Art Exhibition - Student creativity on display.</div></td>
+      <td><img src="20150216_074639.jpg" alt="Gardening Project"><div class="caption">Gardening Project - Learning about sustainability.</div></td>
+      <td><img src="17.jpg" alt="Field Trip"><div class="caption">Field Trip - Discovering new environments.</div></td>
+      <td><img src="library.jpg" alt="Library Time"><div class="caption">Library Time - Exploring the world through books.</div></td>
+    </tr>
+    <tr>
+      <td><img src="60.jpg" alt="Music Class"><div class="caption">Music Class - Harmony and rhythm.</div></td>
+      <td><img src="64.jpg" alt="Computer Lab"><div class="caption">Computer Lab - Developing digital skills.</div></td>
+      <td><img src="2.jpg" alt="Drama Performance"><div class="caption">Drama Performance - Expressing emotions and stories.</div></td>
+      <td><img src="47.jpg" alt="Graduation"><div class="caption">Graduations - “Hats off to our young graduates! Today, you’re little stars—tomorrow, you’ll light up the world!”</div></td>
+    </tr>
+    <tr>
+      <td><img src="11.1.jpg" alt="Community Service"><div class="caption">Community Service - Giving back to the community.</div></td>
+      <td><img src="6.jpg" alt="Science Club"><div class="caption">Achievements - </div></td>
+      <td><img src="39.jpg" alt="Choir Practice"><div class="caption">Choir Practice - Voices united in song.</div></td>
+      <td><img src="42.jpg" alt="Art Class"><div class="caption">Art Class - Painting a world of color.</div></td>
+    </tr>
+  </table>
+   <tr>
+      <td><img src="53.jpg" alt="Community Service"><div class="caption">------------</div></td>
+      <td><img src="58.jpg" alt="Science Club"><div class="caption">--------------</div></td>
+      <td><img src="49.jpg" alt="Choir Practice"><div class="caption">-------------</div></td>
+      <td><img src="66.jpg" alt="Art Class"><div class="caption">---------------</div></td>
+	   <td><img src="d4e04413-c23b-4eac-ac5b-fef788492593.jpg" alt="Community Service"><div class="caption">------------</div></td>
+      <td><img src="PDFW3588.jpg" alt="Science Club"><div class="caption">--------------</div></td>
+      <td><img src="e2fefd3a-55e4-4057-b675-cf0d9fc0502f.jpg" alt="Choir Practice"><div class="caption">-------------</div></td>
+      <td><img src="IVPM6317.jpg" alt="Art Class"><div class="caption">---------------</div></td>
+    </tr>
+  </table>
+</div>
+
+<footer>
+ &copy; 2025 KaMhlushwa Primary School - All rights reserved.
+</footer>
+</body>
+</html>

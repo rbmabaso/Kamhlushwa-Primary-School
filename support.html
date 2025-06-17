@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports, Art and Culture - Primary School</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, royalblue 25%, white 50%, royalblue 25%);
+  }
+
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 60px;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .search-bar {
+    margin: 20px 0;
+  }
+
+  .search-bar input[type="text"] {
+    padding: 8px;
+    width: 60%;
+    max-width: 300px;
+  }
+
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .links {
+    margin: 20px 0;
+  }
+
+  .links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: royalblue;
+    font-weight: bold;
+  }
+
+  .images img {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+    border: 2px solid royalblue;
+    border-radius: 8px;
+  }
+
+  footer {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      margin: 0 auto 10px auto;
+    }
+
+    .search-bar input[type="text"] {
+      width: 80%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="School Logo" class="logo">
+</header>
+
+<div class="container">
+  <h1>Welcome to Sports, Art and Culture</h1>
+  <p>Explore the exciting activities in our primary school: Sports, Art, and Culture. Find information and pictures for each category below!</p>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search for Sports, Art or Culture...">
+    <button>Search</button>
+  </div>
+
+  <div class="links">
+    <a href="sports.html">Sports</a>
+    <a href="art.html">Art</a>
+    <a href="culture.html">Culture</a>
+  </div>
+
+  <div class="images">
+    <h2>Sports</h2>
+    <img src="sports.jpg" alt="Sports">
+    <h2>Art</h2>
+    <img src="art.jpg" alt="Art">
+    <h2>Culture</h2>
+    <img src="culture.jpg" alt="Culture">
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Primary School - Sports, Art and Culture Page
+</footer>
+
+</body>
+</html>
